@@ -1,0 +1,75 @@
+/*=====price-calendar-table start=====**/
+.price-calendar-table {
+	width: 100%;
+	color: #444;
+	font-family: 'Microsoft YaHei';
+	border-spacing: 0;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+.price-calendar-table * {
+	box-sizing: border-box;
+}
+.price-calendar-thead > tr{
+	height: 25px;
+	line-height: 25px;
+}
+.price-calendar-thead > tr > th {
+	text-align: center;
+	vertical-align: middle;
+	font-weight: normal;
+}
+.price-calendar-month {
+	color: #fff;
+	background-color: #4d9df7;
+}
+.price-calendar-month a {
+	display: block;
+	padding: 2px 10px;
+	color: #fff;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+.price-calendar-month a,
+.price-calendar-month a:hover,
+.price-calendar-month a:focus,
+.price-calendar-month a:active,
+.price-calendar-month a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+.price-calendar-tbody > tr > td{
+	padding: 0;
+	border: 1px solid #ddd;
+}
+.price-calendar-tbody .date-cell {
+	min-width: 50px;
+	height: 48px;
+	padding: 2px 4px;
+}
+.price-calendar-tbody .date-cell.on {
+	cursor: pointer;
+}
+.price-calendar-tbody .date-cell.disabled {
+	cursor: not-allowed;
+}
+.price-calendar-tbody .date-cell span {
+	display: block;
+	line-height: 1.2;
+	font-size: 12px;
+	white-space: nowrap;
+}
+.price-calendar-tbody .date-cell .price {
+	color: #ff5b45;
+}
+.price-calendar-tbody .date-cell .remain {
+	color: #390;
+}
+.price-calendar-tbody .date-cell.on:hover,
+.price-calendar-tbody .date-cell.selected {
+	background: #fd9
+}
+.price-calendar-tbody td.disabled {
+	/*background-color: #f2f2f2;*/
+}
+/**=====price-calendar-table end =====*
