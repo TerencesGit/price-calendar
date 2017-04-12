@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Price-Calendar-Demo</title>
+	<link rel="stylesheet" href="css/price-calendar.css">
+</head>
+<body>
+	<div id="calendar_wrap" style="width: 500px;margin: 30px auto"></div>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/price-calendar.js"></script>
+	<script>
+		const data = [{
+			    "Date": "2017-04-12",
+			    "Price": "5900",
+			    "Remain": "8"
+			  }, {
+			    "Date": "2017-04-13",
+			    "Price": "5900",
+			    "Remain": "8"
+			  }, {
+			    "Date": "2017-04-14",
+			    "Price": "5900",
+			    "Remain": "8"
+			  }, {
+			    "Date": "2017-04-15",
+			    "Price": "5900",
+			    "Remain": "8"
+			  }, {
+			    "Date": "2017-04-16",
+			    "Price": "5900",
+			    "Remain": "8"
+			  }, {
+			    "Date": "2017-04-17",
+			    "Price": "5900",
+			    "Remain": "8"
+			  }, {
+			    "Date": "2017-04-18",
+			    "Price": "5900",
+			    "Remain": "8"
+			  }, {
+			    "Date": "2017-04-19",
+			    "Price": "5900",
+			    "Remain": "8"
+			  }, {
+			    "Date": "2017-04-18",
+			    "Price": "5900",
+			    "Remain": "8"
+			  }, {
+			    "Date": "2017-04-19",
+			    "Price": "5900",
+			    "Remain": "8"
+			  },{
+			    "Date": "2017-04-20",
+			    "Price": "5900",
+			    "Remain": "8"
+			  },{
+			    "Date": "2017-04-21",
+			    "Price": "15800",
+			    "Remain": "0",
+			  }, {
+			    "Date": "2017-04-22",
+			    "Price": "15800",
+			    "Remain": "8"
+			  }, {
+			    "Date": "2017-04-23",
+			    "Price": "15800",
+			    "Remain": "8"
+			  }, {
+			    "Date": "2017-04-24",
+			    "Price": "15800",
+			    "Remain": "8"
+			  }, {
+			    "Date": "2017-04-25",
+			    "Price": "15800",
+			    "Remain": "8"
+			  }, {
+			    "Date": "2017-04-26",
+			    "Price": "15800",
+			    "Remain": "8"
+			  }, {
+			    "Date": "2017-04-27",
+			    "Price": "15800",
+			    "Remain": "8"
+			  }, {
+			    "Date": "2017-04-28",
+			    "Price": "15800",
+			    "Remain": "8"
+			  },{
+			    "Date": "2017-04-29",
+			    "Price": "15800",
+			    "Remain": "8"
+			  }, {
+			    "Date": "2017-04-30",
+			    "Price": "15800",
+			    "Remain": "8"
+			  }, 
+			  {
+			    "Date": "2017-05-01",
+			    "Price": "5900",
+			    "Remain": "8"
+			  },{
+			    "Date": "2017-05-02",
+			    "Price": "5900",
+			    "Remain": "8"
+			  },{
+			    "Date": "2017-05-03",
+			    "Price": "5900",
+			    "Remain": "8"
+			  },{
+			    "Date": "2017-05-04",
+			    "Price": "5900",
+			    "Remain": "8"
+			  }, {
+			    "Date": "2017-05-05",
+			    "Price": "5900",
+			    "Remain": "8"
+			  },{
+			    "Date": "2017-05-06",
+			    "Price": "5900",
+			    "Remain": "8"
+			  },{
+			    "Date": "2017-06-01",
+			    "Price": "5900",
+			    "Remain": "8"
+			  }
+		]
+		new PriceCalendar({calendarWrap: '#calendar_wrap', data: data})
+				.on('selected', function(data){
+					alert('日期：'+data.Date+'  价格：'+data.Price+'  库存：'+data.Remain)
+				});
+	</script>
+</body>
+</html>
