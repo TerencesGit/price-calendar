@@ -38,6 +38,9 @@
 	color: #fff;
 	text-decoration: none;
 }
+.price-calendar-month a.disabled {
+	visibility: hidden
+}
 .price-calendar-tbody > tr > td{
 	padding: 0;
 	border: 1px solid #ddd;

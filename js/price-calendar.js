@@ -1,4 +1,6 @@
-//价格日历插件
+/**
+ *价格日历插件
+ */
 (function($){
 	var PriceCalendar = function(config){
 		this.config = {
@@ -132,10 +134,10 @@
 			var DateRange = this.getDateRange();
 			this.calendar.year < DateRange.start_year ||
 			(this.calendar.year == DateRange.start_year && this.calendar.month <= DateRange.start_month) &&
-			this.lastMonthBtn.hide()
+			this.lastMonthBtn.addClass('disabled')
 			this.calendar.year > DateRange.end_year || 
 			(this.calendar.year == DateRange.end_year && this.calendar.month >= DateRange.end_month) && 
-			this.nextMonthBtn.hide()
+			this.nextMonthBtn.addClass('disabled')
 		}, 
 		bindUI: function(){
 			var self = this;
